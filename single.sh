@@ -10,8 +10,8 @@ then
     cp $file  pltosout.bin
     genplif tecplot < genplif.opt &>/dev/null
     surftec < genplif.opt &>/dev/null       
-    mv GENPLIF.DAT gridbeton_field_$tlevel.tec
-    mv SURFTEC.DAT gridbeton_surf_$tlevel.tec
+    mv GENPLIF.DAT field_$tlevel.dat
+    mv SURFTEC.DAT surf_$tlevel.dat
 else
     echo "skipping  $file"
 fi
